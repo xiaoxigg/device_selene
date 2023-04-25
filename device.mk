@@ -21,11 +21,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootctrl.mt6768
 #PRODUCT_STATIC_BOOT_CONTROL_HAL := \更改以下
-PRODUCT_BOOT_CONTROL_HAL_LIBS := \
-    bootctrl.mt6768 \
-    libgptutils \
-    libz \
-    libcutils
+#PRODUCT_BOOT_CONTROL_HAL_LIBS := \
+    #bootctrl.mt6768 \
+    #libgptutils \
+    #libz \
+   # libcutils \   
+
+PRODUCT_STATIC_BOOT_CONTROL_HAL_LIBS := bootctrl.mt6768
+PRODUCT_STATIC_BOOT_CONTROL_HAL_LIBS += libgptutils
+PRODUCT_STATIC_BOOT_CONTROL_HAL_LIBS += libz
+PRODUCT_STATIC_BOOT_CONTROL_HAL_LIBS += libcutils
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
