@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-#define MAX_NUM 100
+
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),selene)
